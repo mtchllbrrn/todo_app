@@ -6,4 +6,8 @@ class TodosController < ApplicationController
   def show
     @todo = Todo.find(params[:id])
   end
+
+  def new
+    @todo = Todo.new
+  end
 end

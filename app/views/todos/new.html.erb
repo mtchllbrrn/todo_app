@@ -1,0 +1,12 @@
+<h1>New Todo</h1>
+
+<%= form_for @todo do |f| %>
+
+  <%= label_tag :title, "Title:" %>
+  <%= text_field :title, placeholder: "Enter title." %>
+
+  <%= label_tag :description, "description:" %>
+  <%= text_field :description, placeholder: "Enter description." %>
+
+  <%= f.submit %>
+<% end %>
