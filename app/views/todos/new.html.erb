@@ -3,10 +3,10 @@
 <%= form_for @todo do |f| %>
 
   <%= label_tag :title, "Title:" %>
-  <%= text_field :title, placeholder: "Enter title." %>
+  <%= f.text_field :title %>
 
-  <%= label_tag :description, "description:" %>
-  <%= text_field :description, placeholder: "Enter description." %>
+  <%= label_tag :description, "Description:" %>
+  <%= f.text_field :description %>
 
   <%= f.submit %>
 <% end %>
