@@ -2,8 +2,9 @@
 <ul>
   <% @todos.each do |todo| %>
     <li>
-      <%= link_to todo.title, todo_path(todo.id) %>
+      <%= link_to todo.title, todo %>
       <%= link_to "edit", edit_todo_path(todo.id) %>
+      <%= link_to "destroy", todo, method: :delete %>
     </li>
   <% end %>
 </ul>
